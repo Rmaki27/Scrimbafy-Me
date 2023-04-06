@@ -22,12 +22,20 @@ h1 {
 }
 
 /* =================
+    Flex containers
+   ================= */
+
+.intro,
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* =================
     Intro
    ================= */
 
 .intro {
-    display: flex;
-    flex-direction: column;
     min-height: 250px;
     text-align: center;
     justify-content: center;
@@ -38,7 +46,18 @@ h1 {
 /* ====================
     Main content
    ==================== */
+.main-content {
+    padding-top: 2.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    align-items: center;
+}
 
+.img-main {
+    width: 120px;
+    border-radius: 50%;
+    justify-content: center;
+}
 
 /* =================
     Form
