@@ -19,6 +19,11 @@ h2 {
     margin: 0.167em;
 }
 
+p {
+    font-size: 1.125rem;
+    line-height: 1.35;
+}
+
 .beta-text {
     font-weight: 900;
 }
@@ -26,7 +31,14 @@ h2 {
 .subheading {
     color: #575757;
     font-weight: 900;
+    margin-bottom: 0.5em;
 }
+
+.beta-text,
+.subheading {
+    text-transform: uppercase;
+}
+
 
 /* =================
     Flex containers
@@ -74,3 +86,14 @@ h2 {
 /* =================
     Media queries 
    ================= */
+
+@media (min-width: 576px) {
+    body {
+        display: flex;
+    }
+
+    .intro,
+    .main-content {
+        flex-basis: 50%;
+    }
+}
